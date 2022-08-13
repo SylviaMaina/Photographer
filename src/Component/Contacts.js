@@ -13,9 +13,13 @@ function Contacts() {
       <div className="socials">
         <h3>Contact</h3>
         <ul>
-          <li>LinkedIn</li>
+          <a href="https://www.linkedin.com/in/sylvia-maina-a2b956159/">
+            <li>LinkedIn</li>
+          </a>
           <li>Instagram</li>
-          <li>Github</li>
+          <a href="https://github.com/SylviaMaina">
+            <li>GitHub</li>
+          </a>
         </ul>
       </div>
       <div className="mails">
