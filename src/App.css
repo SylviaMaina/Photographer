@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Questrial', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  background-image: url("./Component/Media/pexels-r-fera-432059.jpg");
+  height: 40rem; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gradient{
+  background-image: linear-gradient(to right,white,black);
+  width: 30%;
+  height: 40rem;
+  float: left;
+  opacity: 0.4;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box{
+  background-image: linear-gradient(to left,white,black);
+  width: 40%;
+  height: 40rem;
+  float: right;
+  opacity: 0.4;
+}
+.box1{
+  width: 30%;
+  height: 30rem;
+  background-color: transparent;
+  margin-left: 30%;
+  border: 2px solid white;
+}
+.heading{
+  width: 100%;
+}
+.nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  width: 100%;
+  margin-top: -30rem;
+  position: absolute;
   color: white;
+  padding: 2rem;
+}
+.nav ul{
+  display: flex;
+  width: 35rem;
+  justify-content: space-between;
+  list-style: none;
+}
+.headingdeets{
+  margin-top: -20rem;
+  position: absolute;
+  color: white;
+  margin-left: 60%;
+  width: 35%;
+
+}
+.headingdeets h2{
+  font-size: 4rem;
+  text-align: right;
+}
+.headingdeets h6{
+  font-size: 2rem;
+  font-weight: 100;
+  text-align: right;
+}
+.headingdeets button{
+  width: 10rem;
+  height: 2rem;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin-left: 40%;
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-toggler-icon{
+  color: white;
+  
 }
+@media(max-width:1000px){
+  .headingdeets h2{
+    font-size: 2rem;
+  }
+  .nav h2{
+    color: white;
+  }
+  .headingdeets h6{
+    font-size: 1rem;
+  }
+  .headingdeets button{
+    margin-left: 0;
+    width: 8rem;
+  }
+  .nav ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    float: right;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
